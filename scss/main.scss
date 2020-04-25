@@ -1,4 +1,4 @@
-$color: blue;
+@import 'variables';
 
 *{
     margin: 0;
@@ -7,9 +7,46 @@ $color: blue;
 }
 
 body{
-    background: $color;
-    color: white;
+    background: $light-color;
+    color: $dark-color;
+    font-family: $font-stack;
+    line-height: 1.5rem; 
 }
+
+header{
+    background: $dark-color;
+    color: $light-color;
+    padding: 1rem;
+    h1{
+        text-align: center;
+    }
+}
+
+.section {
+    padding: 3rem;
+    h3{
+        font-size: 2rem;
+    }
+    &-a{
+        background: $primary-color;
+        color: white;
+    }
+    &-b{
+        background: $secondary-color;
+        color: white;
+    }
+}
+
+a{
+    color: #333333;
+    &:hover{
+        color: coral;
+    }
+}
+
+
+
+
 
 
 
